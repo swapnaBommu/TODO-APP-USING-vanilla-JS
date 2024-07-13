@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/bg3.jpg");
+  background-size: cover;
+  padding: 10px;
+}
+.todo-app {
+  background-color: transparent;
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  margin: 10px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px rgb(51 6 51 / 71%);
+}
+.header {
+  background-color: transparent;
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  margin: 20px auto 20px;
+  padding: 40px 50px 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: 5px 10px 8px 10px rgb(26 14 26 / 71%);
+}
+.header img {
+  height: 50px;
+  width: 50px;
+}
+.header h1 {
+  color: #79ff05;
+}
+.todo-app .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+input {
+  height: 50px;
+  width: 400px;
+  background-color: transparent;
+  border: 2px solid navy;
+  outline: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+input::placeholder {
+  color: #ffff;
+}
+button {
+  height: 50px;
+  width: 70px;
+  padding: 10px;
+  font-size: 25px;
+  color: #ecf1ee;
+  cursor: pointer;
+  border: 2px solid navy;
+  background-color: transparent;
+}
+
+ul li {
+  list-style: none;
+  font-size: 25px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  color: #ffff;
+  position: relative;
+  border: 2px solid navy;
+  margin-top: 10px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("./images/circle.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #ffff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url("./images/tick.png");
+}
+ul li img {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  line-height: 40px;
+}
+.show-length {
+  margin-top: 10px;
+}
+#items-left,
+#items-left-text {
+  font-size: 20px;
+  color: #ffffff;
+}
